@@ -1,0 +1,36 @@
+---
+const { title, description } = Astro.props;
+
+---
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description}/>
+		<title>{title}</title>
+	</head>
+
+    <style is:global>
+        body {
+            font-family: Lexend, sans-serif;
+            font-size: 1.3rem;
+            margin: 20px;
+            padding: 50px;
+            background-color: #222;
+            color: #fff;
+        }
+        a {
+            color: rgb(18, 253, 253);        
+            font: 1.5em sans-serif;
+        }
+        .hero_nav {            
+            color: rgb(18, 253, 253);        
+            font: 1.5em sans-serif;
+        }
+    </style>
+	<body>
+		<slot />
+	</body>
+</html>

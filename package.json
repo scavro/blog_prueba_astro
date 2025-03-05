@@ -1,0 +1,20 @@
+{
+  "name": "astro-minimal",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "deploy": "gh-pages -d dist --repo https://github.com/scavro/blog_prueba.git",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.3.1",
+    "canvas-confetti": "^1.9.3",
+    "gh-pages": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0"
+  }
+}

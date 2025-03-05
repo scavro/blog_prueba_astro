@@ -1,0 +1,27 @@
+[
+    {
+        "name": "BatManz",
+        "url" : "https://manz.dev/assets/stickers/batmanz.gif",
+        "category" : "streamer"
+    },
+    {
+        "name": "Hulk",
+        "url" : "https://manz.dev/assets/stickers/hulk.gif",
+        "category" : "marvel"
+    },
+    {
+        "name": "Joker Manz",
+        "url" : "https://manz.dev/assets/stickers/joker-manz.png",
+        "category" : "marvel"
+    },
+    {
+        "name": "Mario",
+        "url" : "https://manz.dev/assets/stickers/mario.png",
+        "category" : "streamer"
+    },
+    {
+        "name": "Gandalf",
+        "url" : "https://manz.dev/assets/stickers/gandalf.png",
+        "category" : "streamer"
+    }
+]

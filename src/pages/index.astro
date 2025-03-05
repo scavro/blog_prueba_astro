@@ -1,0 +1,69 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import NavBar from "@/components/NavBar.astro"
+import stickers from  "@/data/stickers.json";
+import Sticker from "@/components/Sticker.astro";
+
+console.log("Jelouuuuuuu");
+const name = "aqui van los stickers de la pagina";
+/*const dato = await fetch ("https://randomuser.me/api").then 
+(response => response.json());
+console.log(dato);*/
+
+/* Esto seria codigo javascript para sacar los datos sticker del json
+{ stickers.map(sticker => 
+	<div> 
+		<img src={sticker.url} alt={sticker.name}>
+	</div>) }*/
+
+---
+
+<style>
+	.sticker-collection{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.celebrate-button{
+		width: 150px;
+		height: 60px;
+	}
+	.button-div{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 50px;
+		margin-bottom: 60px;
+	}
+</style>
+
+<script>
+import NavBar from "@/components/NavBar.astro";
+
+	console.log("Hello¡¡ estoy en el cliente");
+	console.log({NavBar});
+	import confetti from 'canvas-confetti';
+	const button = document.querySelector(".celebrate-button");
+	button.addEventListener('click', () => confetti());
+	console.log(confetti)
+
+</script>
+
+<BaseLayout title="Página principal" description="Pagina principal del blog sobre la antigua roma"> 
+	<h1>Castro</h1>
+	<p>Esta seria la pagina principal del blog de pruebas
+		de Fidel Castro
+	</p>
+	<p>{name}</p>
+
+	<div class="button-div">
+		<button class="celebrate-button">Celebrate¡¡¡</button>
+	</div>
+
+	<div class="sticker-collection">
+		{ stickers.map (sticker => <Sticker data={sticker}></Sticker>)	}
+	</div>
+
+<NavBar></NavBar>
+
+</BaseLayout>
